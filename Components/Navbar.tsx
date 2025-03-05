@@ -1,7 +1,6 @@
 "use client"
 
 import { usePathname } from "next/navigation";
-import { useState } from "react";
 import { Url } from "next/dist/shared/lib/router/router";
 import Link from "next/link";
 import { FaLaptopCode } from "react-icons/fa";

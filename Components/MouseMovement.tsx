@@ -11,7 +11,7 @@ const MouseMovement = () => {
       setPosition({ x: event.clientX, y: event.clientY });
     };
 
-    cursor
+    
 
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
@@ -32,7 +32,7 @@ const MouseMovement = () => {
 
   return (
     <>
-      
+      {cursor ? "" : ""}
       <div
         className="fixed w-[25rem] h-[25rem] bg-[#00c1001a] rounded-full blur-3xl pointer-events-none transition-transform duration-200 "
         style={{ top: position.y, left: position.x, transform: "translate(-50%, -50%)" }}
