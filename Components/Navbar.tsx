@@ -15,8 +15,7 @@ import { useTheme } from "next-themes"
 const Navbar = () => {
 
 
-    const { theme, setTheme } = useTheme();
-    const [active, setActive] = useState<boolean>(true);
+    const { theme } = useTheme();
     const pathname = usePathname();
     const isActive = (path: Url) => pathname === path;
 

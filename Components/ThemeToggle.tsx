@@ -1,14 +1,12 @@
 "use client"
 
 
-import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import { useState } from "react"
 
 
 const ThemeToggle = () => {
     const { theme, setTheme } = useTheme();
-    const [bg, setBg] = useState("dark");
     const [toggle, setToggle] = useState(true)
 
 

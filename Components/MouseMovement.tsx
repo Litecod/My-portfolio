@@ -11,6 +11,8 @@ const MouseMovement = () => {
       setPosition({ x: event.clientX, y: event.clientY });
     };
 
+    cursor
+
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);

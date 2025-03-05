@@ -1,4 +1,4 @@
-import MouseMovement from "@/Components/MouseMovement";
+
 
 
 export default function Home() {
