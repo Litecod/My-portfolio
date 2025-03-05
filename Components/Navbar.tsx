@@ -13,8 +13,7 @@ import { useTheme } from "next-themes"
 
 const Navbar = () => {
 
-
-    const { theme } = useTheme();
+    const {theme} = useTheme()
     const pathname = usePathname();
     const isActive = (path: Url) => pathname === path;
 
@@ -34,11 +33,11 @@ const Navbar = () => {
             <div className="fixed bottom-[2rem] md:top-0 w-full max-w-[1600px] px-[0.9rem] sm:px-[1.5rem] md:px-[3rem] lg:px-[5rem] py-[1rem]  ">
             <div className="flex justify-between bg-transparent items-center">
                 <h1 className="hidden md:block">Lite code</h1>
-                <div className={`${theme === "light" ? "bg-[#b6b6b632] border-[#3c3c3c68]" : "bg-[#36363632] border-[#ffffff68]"} border-[0.3px] flex w-full md:w-auto md:gap-[0.2rem] justify-between items-center  backdrop-blur-md p-[0.4rem] rounded-xl`}>
+                <div className={`${theme === "light" ? "bg-[#b6b6b632] border-[#3c3c3c68]" : "bg-[#3a3a3a32] border-[#ffffff6f]"} border-[0.3px] flex w-full md:w-auto md:gap-[0.2rem] justify-between items-center  backdrop-blur-md p-[0.4rem] rounded-xl`}>
                     {navs.map((item) => {
                         return (
                             <Link key={item.id} href={item.src} className="navbb w-[20%] md:w-auto">
-                                <div className={` ${isActive(item.src) ? `${theme === "light" ? "bg-[#7b7b7b32] border-[#dadadae3] border-[0.3px]" : "bg-[#afafaf1f] border-[#56565668]"} border-[0.3px] ` : ""} w-full max-w-[] flex items-center gap-[0.6rem] py-[0.4rem] px-[0.4rem] sm:px-[1rem] rounded-xl `}>
+                                <div className={` ${isActive(item.src) ? `${theme === "light" ? "bg-[#7b7b7b32] border-[#dadadae3]" : "bg-[#afafaf1f] border-[#56565668]"} border-[0.3px] ` : ""} w-full max-w-[] flex items-center gap-[0.6rem] py-[0.4rem] px-[0.4rem] sm:px-[1rem] rounded-xl `}>
                                     <div className="text-[1.3rem] mx-auto ">{item.icon}</div> <p className="hidden md:block">{item.name}</p>
                                 </div>
                             </Link>

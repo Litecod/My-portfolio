@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="bg-white text-black dark:bg-gray-900 dark:text-white "
+        className="bg-[#fff] text-[#000] dark:bg-[#000] dark:text-white "
       >
         <MouseMovement />
         <ThemeProvider
