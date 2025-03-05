@@ -2,8 +2,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/Components/Navbar";
-import { ThemeProvider } from "@/Components/ThemeProvider";
-import MouseMovement from "@/Components/MouseMovement";
+import { ThemeProvider } from "@/Components/Imp/ThemeProvider";
+import MouseMovement from "@/Components/Imp/MouseMovement";
 
 
 export const metadata: Metadata = {

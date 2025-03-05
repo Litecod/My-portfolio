@@ -11,7 +11,7 @@ const ThemeToggle = () => {
 
 
     const handleClick = () => {
-        setTheme(theme === "dark" ? "light" : "dark")
+        setTheme(theme === "light" ? "dark" : "light")
         setToggle(prev => !prev)
     }
 

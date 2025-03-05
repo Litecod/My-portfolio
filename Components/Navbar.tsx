@@ -8,7 +8,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import { GrConnect } from "react-icons/gr";
 import { MdWorkOutline } from "react-icons/md";
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from "./Imp/ThemeToggle";
 import { useTheme } from "next-themes"
 
 const Navbar = () => {
